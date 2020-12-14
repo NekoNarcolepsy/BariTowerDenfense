@@ -107,6 +107,7 @@ namespace TowerDefense.Targetting
 		/// </summary>
 		protected float m_CurrentRotationSpeed;
 
+
 		/// <summary>
 		/// returns the radius of the collider whether
 		/// its a sphere or capsule
@@ -267,7 +268,7 @@ namespace TowerDefense.Targetting
 					nearest = targetable;
 				}
 			}
-
+			
 			return nearest;
 		}
 
@@ -290,6 +291,7 @@ namespace TowerDefense.Targetting
 			if (m_SearchTimer <= 0.0f && m_CurrrentTargetable == null && m_TargetsInRange.Count > 0)
 			{
 				m_CurrrentTargetable = GetNearestTargetable();
+
 				if (m_CurrrentTargetable != null)
 				{
 					if (acquiredTarget != null)

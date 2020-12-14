@@ -6,6 +6,7 @@ using TowerDefense.Targetting;
 using TowerDefense.Towers;
 using TowerDefense.Towers.Projectiles;
 using UnityEngine;
+using UnityEngine.Animations;
 
 namespace TowerDefense.Affectors
 {
@@ -83,6 +84,9 @@ namespace TowerDefense.Affectors
 		/// Reference to the current tracked enemy
 		/// </summary>
 		protected Targetable m_TrackingEnemy;
+
+
+		public GameObject AttackAnimator;
 
 		/// <summary>
 		/// Gets the search rate from the targetter
@@ -186,6 +190,20 @@ namespace TowerDefense.Affectors
 		/// </summary>
 		protected virtual void Update()
 		{
+			if(trackingEnemy != null)
+            {
+				if (trackingEnemy.transform.position.z > AttackAnimator.transform.position.z)
+				{
+					AttackAnimator.GetComponent<SpriteRenderer>().flipX = true;
+					//Debug.Log("left");
+				}
+				else if (trackingEnemy.transform.position.z < AttackAnimator.transform.position.z)
+				{
+					AttackAnimator.GetComponent<SpriteRenderer>().flipX = false;
+					//Debug.Log("right");
+				}
+
+			}
 			m_FireTimer -= Time.deltaTime;
 			if (trackingEnemy != null && m_FireTimer <= 0.0f)
 			{
@@ -207,6 +225,7 @@ namespace TowerDefense.Affectors
 				}
 			}
 			FireProjectile();
+			AttackAnimator.GetComponent<Animator>().SetTrigger("AttackTrigger");
 		}
 
 		/// <summary>

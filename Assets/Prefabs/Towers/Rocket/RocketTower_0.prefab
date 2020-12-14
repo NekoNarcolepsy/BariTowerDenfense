@@ -537,6 +537,7 @@ MonoBehaviour:
   randomAudioSource: {fileID: 114690847966429982}
   towerTargetter: {fileID: 114770029021469002}
   radiusEffectColor: {r: 0, g: 1, b: 1, a: 0.09803922}
+  AttackAnimator: {fileID: 0}
 --- !u!82 &82622574690679042
 AudioSource:
   m_ObjectHideFlags: 0
