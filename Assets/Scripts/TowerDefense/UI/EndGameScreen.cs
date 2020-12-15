@@ -74,6 +74,11 @@ namespace TowerDefense.UI
 		/// </summary>
 		public Canvas nextLevelButton;
 
+
+		public GameObject buffSelect;
+
+
+		public GameObject restart;
 		/// <summary>
 		/// Reference to the <see cref="LevelManager" />
 		/// </summary>
@@ -143,6 +148,8 @@ namespace TowerDefense.UI
 			nextLevelButton.enabled = false;
 			nextLevelButton.gameObject.SetActive(false);
 
+			buffSelect.SetActive(false);
+
 			m_LevelManager.levelCompleted += Victory;
 			m_LevelManager.levelFailed += Defeat;
 		}
@@ -184,7 +191,7 @@ namespace TowerDefense.UI
 		/// <summary>
 		/// Occurs when the level is sucessfully completed
 		/// </summary>
-		protected void Victory()
+		public void Victory()
 		{
 			OpenEndGameScreen(levelCompleteText);
 			if ((victorySound != null) && (audioSource != null))
@@ -221,6 +228,10 @@ namespace TowerDefense.UI
 			}
 			nextLevelButton.enabled = true;
 			nextLevelButton.gameObject.SetActive(true);
+
+			buffSelect.SetActive(true);
+
+			restart.SetActive(false);
 		}
 
 		/// <summary>
@@ -234,6 +245,15 @@ namespace TowerDefense.UI
 				nextLevelButton.enabled = false;
 				nextLevelButton.gameObject.SetActive(false);
 			}
+
+			if(buffSelect != null)
+            {
+				buffSelect.SetActive(false);
+            }
+			if(restart != null)
+            {
+				restart.SetActive(true);
+            }
 			if ((defeatSound != null) && (audioSource != null))
 			{
 				audioSource.PlayOneShot(defeatSound);
