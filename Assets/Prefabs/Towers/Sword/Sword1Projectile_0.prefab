@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 114588164740221456}
   - component: {fileID: 114438134623300914}
   - component: {fileID: 114805020655380380}
+  - component: {fileID: 8937441054962005832}
   m_Layer: 12
   m_Name: Sword1Projectile_0
   m_TagString: Untagged
@@ -64,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e88b5a37d2f4bc1ad6d6414117ed141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.1
+  delay: 0.8
 --- !u!114 &114805020655380380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,3 +79,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialPoolCapacity: 10
+--- !u!114 &8937441054962005832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977158881363050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a0c4dcc0d440e480163f07a3ecd4ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 2
+  damageAmount: 1.5
+  mask:
+    serializedVersion: 2
+    m_Bits: 2048
+  alignment:
+    unityObjectReference: {fileID: 11400000, guid: 2e20cdb38c63f4edf8ee385c50c089ce,
+      type: 2}

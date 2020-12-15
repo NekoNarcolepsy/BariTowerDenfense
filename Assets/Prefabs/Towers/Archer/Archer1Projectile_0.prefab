@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4958104626598082}
   - component: {fileID: 114588164740221456}
-  - component: {fileID: 114438134623300914}
+  - component: {fileID: 2325394106939567637}
   - component: {fileID: 114805020655380380}
   m_Layer: 12
   m_Name: Archer1Projectile_0
@@ -45,14 +45,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fedeb0b3c5e104ea19d0d4599d22ab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.5
+  damage: 2
   chanceToSpawnCollisionPrefab: 0.33
   collisionParticles: {fileID: 198278080792148898, guid: a4e0e87699dbd400aaf85d616d2618f8,
     type: 3}
   alignment:
     unityObjectReference: {fileID: 11400000, guid: 2e20cdb38c63f4edf8ee385c50c089ce,
       type: 2}
---- !u!114 &114438134623300914
+--- !u!114 &2325394106939567637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,10 +61,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1977158881363050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e88b5a37d2f4bc1ad6d6414117ed141, type: 3}
+  m_Script: {fileID: 11500000, guid: f193b85c3f79a1b4eb05b73865f28e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.1
+  delay: 0.8
+  Arrow: {fileID: 2692783009802001597, guid: 3788a963311308d4ead18ef7a876a43e, type: 3}
 --- !u!114 &114805020655380380
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28354,7 +28354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430798241748466}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1538, z: 1.1192}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4877050138446582}
@@ -38171,7 +38171,7 @@ MonoBehaviour:
   projectilePoints:
   - {fileID: 4457715277627928}
   epicenter: {fileID: 4795219791600268}
-  isMultiAttack: 0
+  isMultiAttack: 1
   fireRate: 0.8
   randomAudioSource: {fileID: 114747113932365056}
   towerTargetter: {fileID: 114079108543431824}
@@ -38318,8 +38318,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 3
-  m_Height: 10
+  m_Radius: 4
+  m_Height: 12
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5854589968379133601
@@ -38333,7 +38333,7 @@ GameObject:
   - component: {fileID: 3911210819658392771}
   - component: {fileID: 3999375689240226328}
   - component: {fileID: 8758163266558077045}
-  - component: {fileID: 3546508003196960783}
+  - component: {fileID: 2925653373510485429}
   m_Layer: 0
   m_Name: Sword1Animation
   m_TagString: Untagged
@@ -38348,13 +38348,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5854589968379133601}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: 0.29883623, y: 0.64085644, z: -0.29883623, w: 0.64085644}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4795219791600268}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 90, z: 0}
 --- !u!212 &3999375689240226328
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38363,8 +38363,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5854589968379133601}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 2
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -38373,7 +38373,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 746c18e1667738a4fb534233de234ae3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38424,7 +38424,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3546508003196960783
+--- !u!114 &2925653373510485429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
