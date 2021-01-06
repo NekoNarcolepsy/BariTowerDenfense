@@ -1,23 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TowerDefense.Level;
+using TowerDefense.Towers;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class BuffSelect : MonoBehaviour
 {
 
-    public Button Buff1;
-    public Button Buff2;
-    public Button Buff3;
+  
     // Start is called before the first frame update
-    void Start()
+
+
+
+    public void SaveSelectedBuff(int i)
     {
-        Buff1.Select();
+        PlayerPrefs.SetInt("SelectedBuff", i);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

@@ -28567,7 +28567,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243152050609072968, guid: c40bed98f23a748f89472abe9c1a6871,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d440c9f7407a04474bf738520785306b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d4b4fc3873c7d7d4897c4fba4bfa48a6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -28685,33 +28685,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
     weightedItems:
-    - clip: {fileID: 8300000, guid: d440c9f7407a04474bf738520785306b, type: 3}
+    - clip: {fileID: 8300000, guid: d6f2e199be857bb4da6062ae5be46d7c, type: 3}
       weight: 1
-    - clip: {fileID: 8300000, guid: d88fd5368c36748d684ff9e8db416da9, type: 3}
+    - clip: {fileID: 8300000, guid: 3d37488662cf2e24aa27a3c14e38774b, type: 3}
       weight: 1
-    - clip: {fileID: 8300000, guid: 5bf7c957d8f4a40ff9977d85be58d48f, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 11e15d42e0a474c719970d3b8ddf4b05, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: dc29f7080efef42e4bffce14778bca99, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: c44a398ac1bfe4fa79c75b96bebddd6a, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 4442df31c446a4ff4ac434e95e5de866, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 5a6ca7a364e294886845ab3c268ea63e, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: eed58edbe19094382b8536c1405fed61, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: e893433625bae4c0584daccfde0c2866, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 3b5fc9b92d19541449a6b6ab388a7ffa, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: ebde808a5205d444193394a272542f85, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: b44217f5373cb4a628587e2194eb15a7, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 9cfc9c4c568e54e68a4038ecdf7ffac7, type: 3}
+    - clip: {fileID: 8300000, guid: d4b4fc3873c7d7d4897c4fba4bfa48a6, type: 3}
       weight: 1
   playOnEnabled: 0
 --- !u!1 &1673132318306072
