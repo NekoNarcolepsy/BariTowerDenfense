@@ -192,7 +192,7 @@ namespace TowerDefense.Affectors
 		{
 			if(trackingEnemy != null)
             {
-				if (trackingEnemy.transform.position.z > AttackAnimator.transform.position.z)
+				if (trackingEnemy.transform.position.z >= AttackAnimator.transform.position.z)
 				{
 					AttackAnimator.GetComponent<SpriteRenderer>().flipX = true;
 					//Debug.Log("left");
@@ -204,6 +204,13 @@ namespace TowerDefense.Affectors
 				}
 
 			}
+			else
+            {
+				if(projectile == GameObject.Find("Enemy Projectile"))
+                {
+					AttackAnimator.GetComponent<SpriteRenderer>().flipX = true;
+				}
+            }
 			m_FireTimer -= Time.deltaTime;
 			if (trackingEnemy != null && m_FireTimer <= 0.0f)
 			{
