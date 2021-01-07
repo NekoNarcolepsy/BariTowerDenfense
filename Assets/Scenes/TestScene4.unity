@@ -1447,22 +1447,22 @@ PrefabInstance:
     - target: {fileID: 114348589391522652, guid: 28035762430e74813854d9ca46df3ebd,
         type: 3}
       propertyPath: mapSize.x
-      value: -30.78931
+      value: -30.788654
       objectReference: {fileID: 0}
     - target: {fileID: 114348589391522652, guid: 28035762430e74813854d9ca46df3ebd,
         type: 3}
       propertyPath: mapSize.y
-      value: -43.893845
+      value: -43.89505
       objectReference: {fileID: 0}
     - target: {fileID: 114348589391522652, guid: 28035762430e74813854d9ca46df3ebd,
         type: 3}
       propertyPath: mapSize.width
-      value: 52.933094
+      value: 52.93225
       objectReference: {fileID: 0}
     - target: {fileID: 114348589391522652, guid: 28035762430e74813854d9ca46df3ebd,
         type: 3}
       propertyPath: mapSize.height
-      value: 75.89078
+      value: 75.89063
       objectReference: {fileID: 0}
     - target: {fileID: 114348589391522652, guid: 28035762430e74813854d9ca46df3ebd,
         type: 3}
